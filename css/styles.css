@@ -91,14 +91,20 @@ img{
     transition: var(--transition);
 }
 
-.nav-btn:hover{
+.btn:hover{
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
 }
 
+.btn-primary{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
 /* ========================= NAVBAR ================================== */
 nav{
+    font-size: 0%;
     background: transparent;
     width: 100vw;
     height: 5rem;
@@ -125,7 +131,7 @@ nav{
 }
 
 .nav-menu a {
-    font-size: 0.5rem;
+    font-size: 1rem;
     transition: var(--transition);
 }
 
@@ -134,7 +140,25 @@ nav{
 }
 
 /* ======================== HEADER ============================= */
-.header-container{
+header{
     position: relative;
     top: 5rem;
+    overflow: hidden;
+    height: 78vh;
+    margin-bottom: 5rem;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header-left p{
+    margin: 1rem 0 2.4rem;
+}
+
+.header-left h1{
+    line-height: 3rem;
 }
