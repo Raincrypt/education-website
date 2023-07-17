@@ -22,6 +22,26 @@ faqs.forEach(faq => {
         else{
             icon.className = "uil uil-plus";
         }
-        
     })
+})
+
+//Navigation Menu Button Function for Tablet/Mobile
+
+let navButtonOpen = document.querySelector("#open-menu");
+let navButtonClose = document.querySelector("#close-menu");
+let menu = document.querySelector(".nav-menu");
+
+//for opening menu
+navButtonOpen.addEventListener('click', () => {
+    menu.style.display = "flex";
+    navButtonClose.style.display = "inline-block";
+    navButtonOpen.style.display = "none";
+    
+})
+
+// for closing menu
+navButtonClose.addEventListener('click', () => {
+    menu.style.display = "none";
+    navButtonOpen.style.display = "inline-block";
+    navButtonClose.style.display = "none";
 })
